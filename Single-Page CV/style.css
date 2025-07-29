@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #fff; 
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    padding: 20px; 
+}
+
+main {
+    width: 100%; 
+    max-width: 800px;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    padding: 40px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+a {
+    color: #007bff; /* Color azul para enlaces, similar al de la imagen */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* 2. Estilos del Encabezado (Header) */
+header {
+    text-align: left; /* Alineación a la izquierda como en la imagen */
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2em; /* Tamaño para el nombre */
+    font-weight: bold; /* Negrita para el nombre */
+    color: #000; /* Color negro para el nombre */
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.1em; /* Tamaño para el título de trabajo */
+    color: #1b8edc; /* Color verde para el título de trabajo */
+    font-weight: normal; /* No negrita */
+    margin-bottom: 15px;
+}
+
+/* Información de contacto */
+.info-contacto address {
+    font-style: normal; /* Elimina la cursiva predeterminada de <address> */
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555; /* Un gris más suave para la información de contacto */
+}
+
+/* Ajuste para los enlaces dentro de address, si se usan */
+.info-contacto address a {
+    display: block; /* Cada enlace en su propia línea */
+    margin: 0; /* Elimina el margen predeterminado de los párrafos dentro de address */
+}
+
+
+/* 3. Estilos de Secciones */
+section {
+    margin-bottom: 30px; /* Espacio entre cada sección */
+}
+
+/* Títulos de sección (Skills, Education, Experience, Across the Internet) */
+.section-title {
+    font-size: 1.2em; /* Tamaño para los títulos de sección */
+    font-weight: bold; /* Negrita */
+    color: #000; /* Color negro */
+    border-bottom: 1px solid #0f7acc; /* Línea verde debajo del título */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+    margin-bottom: 15px; /* Espacio después del título */
+}
+
+/* Sección de Habilidades */
+.skills ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    /* Para que las habilidades se muestren en una línea con comas, como en la imagen */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Pequeño espacio entre cada habilidad */
+}
+
+.skills ul li {
+    display: inline; /* Hace que los elementos de la lista se comporten como texto en línea */
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Agrega una coma después de cada habilidad, excepto la última */
+.skills ul li:not(:last-child)::after {
+    content: ", ";
+}
+
+/* Sección de Educación */
+.education h4 {
+    font-size: 1.05em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Sección de Experiencia */
+.experience article {
+    margin-bottom: 25px; /* Espacio entre cada entrada de experiencia */
+}
+
+.experience article:last-of-type {
+    margin-bottom: 0; /* No hay margen inferior en la última entrada */
+}
+
+.experience article h4 {
+    font-size: 1.05em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience article p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.experience article ul {
+    list-style: disc; /* Puntos de lista */
+    margin-left: 20px; /* Sangría para los puntos */
+    margin-top: 10px;
+}
+
+.experience article ul li {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+/* Estilo para la línea de "Skills" dentro de la experiencia */
+.experience article p.skills-list-in-experience { /* Usar una clase específica para evitar conflictos */
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Sección "Across the Internet" */
+.internet a {
+    display: block; /* Cada enlace en su propia línea */
+    margin-bottom: 5px; /* Espacio entre enlaces */
+    font-size: 0.95em;
+}
+
+/* Media Queries para pantallas más pequeñas (móviles) */
+@media (max-width: 767px) {
+    body {
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    main {
+        padding: 25px; /* Reducir el padding interno del CV */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+    }
+}

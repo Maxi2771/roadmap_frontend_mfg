@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML Website | Contacto</title>
+    <meta name="description" content="Single Page CV of Maxi." />
+    <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript" />
+    <meta name="author" content="Máximo Goitia" />
+    <meta property="og:title" content="Single Page CV of Maxi" />
+    <meta property="og:description" content="Single Page CV of Maxi, a Frontend Developer." />
+    <meta property="og:image" content="https://res.cloudinary.com/duidrgg1k/image/upload/v1725421776/male-technologist_n0fbey.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="img/kodez.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://github.com/Maxi2771" class="header_logo">Máximo Goitia</a>
+            <ul class="header_ul">
+                <li class="header_li"><a href="index.html">Inicio</a></li>
+                <li class="header_li"><a href="proyectos.html">Proyectos</a></li>
+                <li class="header_li"><a href="articulos.html">Artículos</a></li>
+                <li class="header_li"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contacto">
+        <section class="section-contacto">
+            <h1>Contacto</h1>
+            <p>Si deseas ponerte en contacto conmigo, puedes hacerlo a través de las siguientes redes sociales:</p>
+            <ul class="contacto-lista">
+                <li><a class="contacto-link" target="_blank" href="https://github.com/Maxi2771">GitHub</a></li>
+                <li><a class="contacto-link" target="_blank" href="https://www.linkedin.com/in/maxi-mfg/">LinkedIn</a></li>
+            </ul>
+            <p>También puedes enviarme un mensaje</p>
+            <form class="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input class="form-input" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                <label for="email">Email:</label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="Tu email">
+                <textarea class="form-input" name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                <button class="btn-contacto " type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
